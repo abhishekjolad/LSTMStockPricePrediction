@@ -46,7 +46,7 @@ model = tf.keras.Sequential([
 model.compile(optimizer="adam", 
               loss="mean_squared_error")
 
-model.fit(X_train, y_train, batch_size=1, epochs=1)
+model.fit(X_train, y_train, batch_size=1, epochs=2)
 
 #Create Testing Data
 test_data = scaled_data[training_data_len - 60: , :]
